@@ -1,0 +1,9 @@
+services:
+    BotMan\BotMan\BotMan:
+        class: BotMan\BotMan\BotMan
+        factory: ['GAS\BotmanBundle\DependencyInjection\GASBotmanFactory', 'create']
+        arguments: ["@service_container", "@cache.app", "@request_stack"]
+        
+    gas_botman.botman:
+        alias: BotMan\BotMan\BotMan
+        public: true

@@ -1,0 +1,3 @@
+gas_botman_homepage:
+    path:     /
+    defaults: { _controller: GASBotmanBundle:Default:index }

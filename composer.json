@@ -1,0 +1,28 @@
+{
+    "name" : "gasciences/botman-bundle",
+    "description" : "BotMan Symfony bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Gilles Aouizerate",
+        "email" : "gilles@gasciences.com"
+    }],
+    "keywords" : ["Symfony", "bundle", "BotMan", "Chatbot"],
+    "license" : [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=7.1",
+        "botman/botman": "^2.6",
+        "botman/driver-web": "^1.5",
+        "symfony/cache": "^3.4|^4.0",
+        "symfony/config": "^3.4|^4.0",
+        "symfony/dependency-injection": "^3.4|^4.0",
+        "symfony/http-foundation": "^3.4|^4.0",
+        "symfony/http-kernel": "^3.4|^4.0",
+    },
+    "autoload" : {
+        "psr-4" : {
+            "GAS\\BotmanBundle" : ""
+        }
+    }
+}
